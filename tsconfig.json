@@ -4,11 +4,15 @@
     "lib": ["es2017"],
     "module": "commonjs",
     "outDir": "lib/",
-    "sourceMap": false
+    "sourceMap": false,
+    "types": [
+      // add node as an option
+      "node"
+    ],
   },
   "include": [
     "src/**/*.ts"
-    ],
+  ],
   "exclude": [
     "node_modules"
   ]
