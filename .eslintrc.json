@@ -4,11 +4,13 @@
     "project": "./tsconfig.json"
   },
   "plugins": ["@typescript-eslint", "prettier"],
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
   "rules": {
-    "prettier/prettier": ["error", {
-      "printWidth": 100,
-      "singleQuote": true
-    }]
+    "prettier/prettier": "error"
   }
 }
